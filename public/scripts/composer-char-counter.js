@@ -9,6 +9,19 @@ $( document ).ready(function() {
         $(this).siblings('.counter').text(charRemaining).css("color", "black");
       }
     });
+
+    
+    $("article").hover(function () {
+        $(this).find(".heart-icon").show();
+        $(this).find(".retweet-icon").show();
+        $(this).find(".flag-icon").show();
+        $(this).css("border-color", "black");
+    },function () {
+        $(this).find(".heart-icon").hide();
+        $(this).find(".retweet-icon").hide();
+        $(this).find(".flag-icon").hide();
+        $(this).css("border-color", "lightgrey");
+    });
 });
 
 // $ (document).addEventListener("keypress", function(event) {
