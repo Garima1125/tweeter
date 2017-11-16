@@ -22,11 +22,15 @@ $( document ).ready(function() {
         $(this).find(".flag-icon").hide();
         $(this).css("border-color", "lightgrey");
     });
+    $(".compose-button").hover(function() {
+        $(this).css("border-color","black");
+    });
+
 });
 
-// $ (document).addEventListener("keypress", function(event) {
-//   console.log(event);
-// });
+
+    
+
 
 
 
