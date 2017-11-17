@@ -19,3 +19,10 @@ Jquery,Ajax on the front-end, Express as middleware and Node and MongoDB on the 
 - Moment.js
 - MongoDB
 - Jquery
+
+## Screenshots
+!["Screenshot of tweet box"](https://github.com/Garima1125/tweeter/blob/master/docs/tweeter-box.png?raw=true)
+
+!["Screenshot of tweet box toggle with compose button"](https://github.com/Garima1125/tweeter/blob/master/docs/compose-button-toggle.png?raw=true)
+
+!["Screenshot of App returning a JSON reponse"](https://github.com/Garima1125/tweeter/blob/master/docs/json-data.png?raw=true)
