@@ -1,10 +1,10 @@
 #nav-bar {
-    height: 80px;
-    background-color: #00a087;
-    position: top;
-    color: #e8fdff;
-    padding-left: 2em;
-    padding-right: 2em;
+  height: 80px;
+  background-color: #00a087;
+  position: top;
+  color: #e8fdff;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 #nav-bar .logo{

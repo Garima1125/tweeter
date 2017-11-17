@@ -43,7 +43,7 @@ var data = [
     },
     "created_at": 1461113796368
   }
-  ];
+];
 
 function createTweetElement(tweetData) {
   const userHandle = tweetData['user']['handle'];
@@ -88,42 +88,38 @@ function loadTweets() {
     }
   });
 }
- // calls createTweetElement for each tweet
-// takes return value and appends it to the tweets container
 
 $(document).ready( function () {
- renderTweets(data);
- $('.new-tweet form').on('submit',function(event){
-  event.preventDefault();
-  const text = $("textarea").val();
-  if (text === null || text === '') {
-    alert("Tweet can not be empty");
-  } else if (text.length > 140) {
-    alert("Tweet can't be more than 140 characters");
-  } else {
-    let input = $( this ).serialize();
-    $.ajax({
-      url: "/tweets/",
-      method: "POST",
-      data: input,
-      success: function() {
-        console.log("post ajax call works");
-        loadTweets();
-        $("#mytextarea").val("");
-        $(".counter").text(140);
-
-      }
-   });
-  }
-
-});
- $('.compose-button').on('click',function(event){
-  $('.new-tweet').toggle(function(){
-    $('textarea').focus();
-
+  renderTweets(data);
+  $('.new-tweet form').on('submit',function(event){
+    event.preventDefault();
+    const text = $("textarea").val();
+    if (text === null || text === '') {
+      alert("Tweet can not be empty");
+    } else if (text.length > 140) {
+      alert("Tweet can't be more than 140 characters");
+    } else {
+      let input = $( this ).serialize();
+      $.ajax({
+        url: "/tweets/",
+        method: "POST",
+        data: input,
+        success: function() {
+          console.log("post ajax call works");
+          loadTweets();
+          $("#mytextarea").val("");
+          $(".counter").text(140);
+        }
+      });
+    }
 
   });
-});
+  
+  $('.compose-button').on('click',function(event){
+    $('.new-tweet').toggle(function(){
+      $('textarea').focus();
+    });
+  });
 });
 
 function escape(str) {
@@ -132,10 +128,6 @@ function escape(str) {
   return div.innerHTML;
 }
 
-
-
-// bug duplicating everything
-// clear out the textbox
 
 
 
