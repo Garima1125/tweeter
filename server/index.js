@@ -9,6 +9,15 @@ const app           = express();
 
 const {MongoClient} = require("mongodb");
 const MONGODB_URI   = "mongodb://localhost:27017/tweeter";
+const sassMiddleware= require('node-sass-middleware');
+
+
+
+app.use(sassMiddleware({
+      src: './public/styles/sass',
+      dest: './public/styles',
+      prefix:  '/styles'
+  }))
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));

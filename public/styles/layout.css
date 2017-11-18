@@ -1,31 +1,188 @@
+#nav-bar {
+  height: 80px;
+  background-color: #00a087;
+  position: top;
+  color: #e8fdff;
+  padding-left: 2em;
+  padding-right: 2em; }
+
+#nav-bar .logo {
+  width: 80px;
+  height: 80px;
+  float: left; }
+
+#nav-bar .header {
+  font-size: 3em;
+  line-height: 80px;
+  float: left;
+  padding-left: 10px; }
+
+#nav-bar .compose-button {
+  float: right;
+  background-color: #e8fdff;
+  width: 100px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10%; }
+
+#nav-bar .edit {
+  width: 20px;
+  height: 20px; }
+
+.counter {
+  float: right;
+  padding-right: 10px; }
+
+section h2 {
+  font-size: 25px;
+  padding: 8px;
+  border-bottom: 1px solid black;
+  background-color: #EEEEEE;
+  margin: 0;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 10px; }
+
+textarea {
+  height: 100px;
+  width: 412px;
+  margin-left: 10px;
+  margin-top: 10px; }
+
+form {
+  background-color: #EEEEEE;
+  display: block;
+  margin-top: 0em;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+input {
+  margin-left: 10px; }
+
+new-tweet {
+  width: 565px;
+  margin: auto;
+  background: #fff;
+  height: calc(100vh - 80px);
+  padding-top: 30px; }
+
+section img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.arttweet h3 {
+  display: block;
+  margin-top: 0em;
+  padding-bottom: 10px;
+  font-size: 25px;
+  padding: 8px; }
+
+.arttweet header {
+  background-color: #EEEEEE;
+  height: 100px; }
+
+.tweetId {
+  float: right;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+.arttweet {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+.arttweet p {
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+footer {
+  border-top: solid;
+  border-width: 0.5px;
+  border-color: lightgrey;
+  padding-left: 10px;
+  line-height: 3em; }
+
+.heart-icon {
+  display: none;
+  width: 30px;
+  height: 20px;
+  float: right; }
+
+.retweet-icon {
+  display: none;
+  width: 40px;
+  height: 30px;
+  float: right; }
+
+.flag-icon {
+  display: none;
+  width: 30px;
+  height: 20px;
+  float: right; }
+
+@media (max-width: 480px) {
+  .new-tweet h2 {
+    font-size: 15; } }
+
+@media (max-width: 446px) {
+  .logo {
+    width: 50px;
+    height: 50px; }
+  .compose-button {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 0px; }
+  .header {
+    font-size: 0.5em;
+    line-height: 40px; }
+  #nav-bar {
+    display: flex;
+    width: 446px; } }
+
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 /*
  * Global layout stuff
  */
-
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #eee;*/
-}
+  background-color: #eee; }
 
 .container {
   background: white;
   width: 450px;
   margin: auto;
-  padding: 30px 0;
-}
-
+  padding: 30px 0; }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
